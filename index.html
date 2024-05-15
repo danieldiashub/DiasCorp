@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Canal de Educação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #005f73;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0a9396;
+        }
+        nav a {
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #94d2bd;
+        }
+        .container {
+            padding: 2rem;
+        }
+        h2 {
+            color: #005f73;
+        }
+        .video-list, .blog-list, .resources-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .video-item, .blog-item, .resource-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 8px;
+            flex: 1 1 calc(33.333% - 2rem);
+        }
+        footer {
+            background-color: #005f73;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea {
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        button {
+            padding: 0.5rem;
+            background-color: #005f73;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Canal de Educação</h1>
+        <p>Bioquímica e Medicina</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">Sobre Mim</a>
+        <a href="#youtube">Conteúdos do YouTube</a>
+        <a href="#blog">Blog</a>
+        <a href="#resources">Recursos Educacionais</a>
+        <a href="#contact">Contato</a>
+    </nav>
+    <section id="home" class="container">
+        <h2>Bem-vindo ao Meu Canal</h2>
+        <p>Aqui você encontra conteúdos educacionais sobre bioquímica e medicina.</p>
+        <div class="video-list">
+            <!-- Vídeos em destaque -->
+            <div class="video-item">
+                <h3>Vídeo 1</h3>
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                <p>Descrição do vídeo 1.</p>
+            </div>
+            <div class="video-item">
+                <h3>Vídeo 2</h3>
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                <p>Descrição do vídeo 2.</p>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="container">
+        <h2>Sobre Mim</h2>
+        <p>Sou um entusiasta de bioquímica e medicina, com experiência em ensinar e compartilhar conhecimentos nessas áreas. Meu objetivo é tornar esses temas acessíveis e interessantes para todos.</p>
+    </section>
+    <section id="youtube" class="container">
+        <h2>Conteúdos do YouTube</h2>
+        <div class="video-list">
+            <!-- Lista de vídeos -->
+            <div class="video-item">
+                <h3>Vídeo 1</h3>
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                <p>Descrição do vídeo 1.</p>
+            </div>
+            <div class="video-item">
+                <h3>Vídeo 2</h3>
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                <p>Descrição do vídeo 2.</p>
+            </div>
+            <!-- Adicione mais vídeos conforme necessário -->
+        </div>
+    </section>
+    <section id="blog" class="container">
+        <h2>Blog</h2>
+        <div class="blog-list">
+            <!-- Lista de posts do blog -->
+            <div class="blog-item">
+                <h3>Post 1</h3>
+                <p>Resumo do post 1.</p>
+                <a href="#">Leia mais</a>
+            </div>
+            <div class="blog-item">
+                <h3>Post 2</h3>
+                <p>Resumo do post 2.</p>
+                <a href="#">Leia mais</a>
+            </div>
+            <!-- Adicione mais posts conforme necessário -->
+        </div>
+    </section>
+    <section id="resources" class="container">
+        <h2>Recursos Educacionais</h2>
+        <div class="resources-list">
+            <!-- Lista de recursos -->
+            <div class="resource-item">
+                <h3>Recurso 1</h3>
+                <p>Descrição do recurso 1.</p>
+                <a href="#">Acesse aqui</a>
+            </div>
+            <div class="resource-item">
+                <h3>Recurso 2</h3>
+                <p>Descrição do recurso 2.</p>
+                <a href="#">Acesse aqui</a>
+            </div>
+            <!-- Adicione mais recursos conforme necessário -->
+        </div>
+    </section>
+    <section id="contact" class="container">
+        <h2>Contato</h2>
+        <form action="mailto:seuemail@example.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu email" required>
+            <textarea name="message" placeholder="Sua mensagem" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Meu Canal de Educação. Todos os direitos reservados.</p>
+        <p>Siga-me nas redes sociais:
+            <a href="https://facebook.com/seuusuario" target="_blank">Facebook</a> |
+            <a href="https://twitter.com/seuusuario" target="_blank">Twitter</a> |
+            <a href="https://instagram.com/seuusuario" target="_blank">Instagram</a>
+        </p>
+    </footer>
+</body>
+</html>
